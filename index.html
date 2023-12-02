@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Website | MAAN</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/products.css" />
+    <link rel="stylesheet" href="./css/card.css" />
+    <link rel="stylesheet" href="./css/features.css" />
+    <link rel="stylesheet" href="./css/recentItem.css" />
+    <link rel="stylesheet" href="./css/pricing.css" />
+    <link rel="stylesheet" href="./css/contactForm.css" />
+    <link rel="stylesheet" href="./css/newsletter.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <!-- NavBar Section -->
+    <section id="navBar">
+      <div class="myNavbar">
+        <div class="brandName">
+          <h3 class="logoName">Maan</h3>
+          <p class="slogan">Always on Service</p>
+        </div>
+
+        <div class="navBar-links">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!--  Navbar For Phone and Tablet -->
+        <div class="navBar-links-phone" id="navBarForPhone">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="send-btn">
+          <input type="button" value="Send us Message" class="sendUsMessage" />
+          <div class="hamburger" onclick="handleNavBar()">
+            <box-icon name="menu" size="30px"></box-icon>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero">
+        <div class="content">
+          <h1 class="shopName">Maan Digital Shop</h1>
+          <p class="heroText">Sell Your Digital Creative Products By MAAN</p>
+          <input type="submit" value="Browser Products" class="hero-btn" />
+        </div>
+      </div>
+      <div class="underHeroSection">
+        <div class="users">
+          <h1 class="number">5,000</h1>
+          <p class="purpose">Happy Users</p>
+        </div>
+        <div class="heroProducts">
+          <h1 class="number">45</h1>
+          <p class="purpose">products</p>
+        </div>
+        <div class="subscribers">
+          <h1 class="number">9,500</h1>
+          <p class="purpose">Subscribers</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="product">
+      <div class="products">
+        <p class="productsText">Create Amazing Digital Works</p>
+        <h1 class="productsHeading">Creative Products</h1>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="product-card card1">
+                <img
+                  class="product-image"
+                  src="images/social-media-icons.jpg"
+                  alt=""
+                />
+                <p class="price">$32</p>
+                <p class="desc">600 Flat Icons</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="product-card card1">
+                <img class="product-image" src="images/iphone.jpg" alt="" />
+                <p class="price">$58</p>
+                <p class="desc">Traveler UI Kits</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="product-card card1">
+                <img class="product-image" src="images/gallery.jpg" alt="" />
+                <p class="price">$37</p>
+                <p class="desc">40 iDevice Mockups</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+      <div class="features">
+        <p class="text">All <span>THE BEST</span> features</p>
+        <p class="someText">
+          Excepteur sint occaecat cupidatat non proident, <br />
+          sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card-container">
+                <div class="icon">
+                  <box-icon name="cog" color="#913bff" size="50px"></box-icon>
+                </div>
+
+                <h4 class="cardHeader">Great Support</h4>
+                <p class="cardText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card-container">
+                <div class="icon">
+                  <box-icon
+                    name="cloud-download"
+                    color="#913bff"
+                    size="50px"
+                  ></box-icon>
+                </div>
+
+                <h4 class="cardHeader">Free Updates</h4>
+                <p class="cardText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card-container">
+                <div class="icon">
+                  <box-icon
+                    name="check-shield"
+                    color="#913bff"
+                    size="50px"
+                  ></box-icon>
+                </div>
+
+                <h4 class="cardHeader">100% Secured Payment Gateway</h4>
+                <p class="cardText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card-container">
+                <div class="icon">
+                  <box-icon
+                    name="dollar"
+                    color="#913bff"
+                    size="50px"
+                  ></box-icon>
+                </div>
+                <h4 class="cardHeader">30 Days Money Back</h4>
+                <p class="cardText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row underFeature">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="left">
+                <p class="simpleText">One-stop Solution</p>
+                <h1 class="headingText">Show Your Portfolio</h1>
+                <p class="anotherText">
+                  Donec vel dapibus massa. Nulla gravida euismod lorem, tempus
+                  hendrerit est porta eu. Aenean tortor enim, cursus eget
+                  euismod vel, euismod in eros.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <img class="svgImage" src="./images/features6.svg" alt="svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RecentItem Section -->
+    <section id="recentItem">
+      <div class="recent-item">
+        <p class="itemHeading"><span>RECENT</span> ITEMS</p>
+
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="product-card card1">
+                <img class="product-image" src="images/item-one.jpg" alt="" />
+                <p class="price">$32</p>
+                <p class="desc">256 IPhone Mockup</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="product-card card1">
+                <img class="product-image" src="images/item-two.jpg" alt="" />
+                <p class="price">$68</p>
+                <p class="desc">Butique Ecommerce</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="product-card card1">
+                <img class="product-image" src="images/item-three.jpg" alt="" />
+                <p class="price">$38</p>
+                <p class="desc">Window 10 UI Kit</p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="product-card card1">
+                <img class="product-image" src="images/item-four.jpg" alt="" />
+                <p class="price">$32</p>
+                <p class="desc">600 Flat icons</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="product-card card1">
+                <img class="product-image" src="images/item-five.jpg" alt="" />
+                <p class="price">$29</p>
+                <p class="desc">Wireframe Kit</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <Card image="{item6}" price="$34" description="30 Oceans" />
+              <div class="product-card card1">
+                <img class="product-image" src="images/item-six.jpg" alt="" />
+                <p class="price">$34</p>
+                <p class="desc">30 Oceans</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+      <div class="pricing">
+        <p class="pricingHeading"><strong>SIMPLE</strong> PRICING</p>
+        <p class="pricingText">
+          <strong>Here</strong>, we take pride in offering innovative solutions
+          <br />
+          that empower businesses and individuals alike.
+        </p>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="pricing-card-container">
+                <p class="type">Standard</p>
+                <p class="pkg-price"><sup>$</sup>0</p>
+                <p class="offer">1 Domain</p>
+                <p class="offer">1 Year Premium Support</p>
+                <p class="offer">Team fundraising</p>
+                <input type="button" value="Choose Plan" class="price-btn" />
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="pricing-card-container premium">
+                <p class="type t">Premium</p>
+                <p class="pkg-price"><sup class="sup">$</sup>40</p>
+                <p class="offer">1 Domain</p>
+                <p class="offer">1 Year Premium Support</p>
+                <p class="offer">Team fundraising</p>
+                <input
+                  type="button"
+                  value="Choose Plan"
+                  class="price-btn btn2"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="pricing-card-container">
+                <p class="type">Standard</p>
+                <p class="pkg-price"><sup class="sup">$</sup>28</p>
+                <p class="offer">1 Domain</p>
+                <p class="offer">1 Year Premium Support</p>
+                <p class="offer">Team fundraising</p>
+                <input type="button" value="Choose Plan" class="price-btn" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ContactForm Section -->
+    <section id="contact">
+      <div class="container-fluid contact-form">
+        <form action="#">
+          <div class="row">
+            <div class="col-lg-12">
+              <label htmlFor="name">Name:</label>
+              <br />
+              <input
+                type="text"
+                name="name"
+                class="input"
+                placeholder="Enter Your Full Name"
+              />
+              <br />
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <label htmlFor="email">Email:</label>
+            <br />
+            <input
+              type="email"
+              name="email"
+              class="input"
+              placeholder="Enter Your Email Address"
+            />
+            <br />
+          </div>
+
+          <div class="col-lg-12">
+            <label htmlFor="message">Message:</label>
+            <br />
+            <textarea
+              name="message"
+              class="input"
+              rows="5"
+              placeholder="Enter Message"
+            ></textarea>
+            <br />
+          </div>
+
+          <div class="col-lg-12">
+            <input type="submit" value="Send Message" class="contact-btn" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- NewsLetter Section -->
+    <section id="newsletter">
+      <div class="newsletter">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <h1 class="newsText">
+                Subscribe to our newsletter so you won’t miss our great premium
+                wordpress themes or the other products and interesting things to
+                share!
+              </h1>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form">
+                <input
+                  type="email"
+                  name="email"
+                  class="news-input"
+                  placeholder="Enter Your Email"
+                />
+                <input type="submit" value="Subscribe" class="news-btn" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section id="footer">
+      <div class="footer">
+        <div class="footer-two">
+          <div class="footer-content">
+            <div class="footer-two-left">
+              <p
+                style="
+                  font-size: 30px;
+                  color: #000;
+                  font-weight: 700;
+                  margin-left: 20px;
+                "
+              >
+                Inspired By MOBIRISE
+              </p>
+            </div>
+            <div class="footer-two-right">
+              <div class="icons-container">
+                <ul class="social-icons">
+                  <li>
+                    <box-icon
+                      type="logo"
+                      name="linkedin"
+                      color="#fff"
+                    ></box-icon>
+                  </li>
+                  <li>
+                    <box-icon
+                      type="logo"
+                      name="facebook"
+                      color="#fff"
+                    ></box-icon>
+                  </li>
+                  <li>
+                    <box-icon
+                      type="logo"
+                      name="twitter"
+                      color="#fff"
+                    ></box-icon>
+                  </li>
+                  <li>
+                    <box-icon
+                      type="logo"
+                      name="youtube"
+                      color="#fff"
+                    ></box-icon>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BoxIcons CDN -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="./js/navBar.js"></script>
+  </body>
+</html>

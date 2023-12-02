@@ -1,0 +1,63 @@
+.newsletter {
+  padding: 4rem;
+  background: #fff;
+}
+
+.newsText {
+  font-size: 28px;
+  line-height: 1.4;
+  padding-left: 40px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 30px;
+}
+
+.news-input {
+  padding: 14px;
+  width: 300px;
+  outline: none;
+}
+
+.news-btn {
+  padding: 14px;
+  width: 150px;
+  background: #0066ff;
+  color: #fff;
+  border: 2px solid #0066ff;
+}
+
+/* Media Screen for Medium Screens (Tablet) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .newsText {
+    font-size: 20px;
+  }
+
+  .news-input,
+  .news-btn {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+  .newsText {
+    font-size: 24px;
+  }
+}
+
+/* Media Screens for Small Screen (Phone) */
+@media screen and (width < 481px) {
+  .newsText {
+    font-size: 15px;
+    padding: 0px 10px;
+    line-height: 1.5;
+  }
+
+  .news-input,
+  .news-btn {
+    padding: 6px;
+  }
+}

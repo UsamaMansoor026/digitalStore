@@ -1,0 +1,94 @@
+.products {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #cecece;
+}
+
+.productsText {
+  font-size: 30px;
+  color: #a1a0a0;
+  text-align: center;
+}
+
+.productsHeading {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 500;
+  letter-spacing: 1.3px;
+  word-spacing: 10px;
+  padding-bottom: 50px;
+}
+
+.product-card {
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.08);
+}
+
+.product-card .product-image {
+  width: 100%;
+  height: 264px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.price {
+  text-align: center;
+  color: #913bff;
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.desc {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+
+/* Media Screens for medium Screens (Tablet) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .product-card {
+    width: 90%;
+    margin: 18px auto;
+  }
+
+  .productsText {
+    font-size: 19px;
+  }
+
+  .productsHeading {
+    font-size: 45px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+  .product-card {
+    margin: 10px auto;
+  }
+}
+
+/* Media Screen for Small Screem (Phone) */
+@media screen and (width < 481px) {
+  .product-card {
+    width: 90%;
+    margin: 18px auto;
+  }
+
+  .productsText {
+    font-size: 15px;
+  }
+
+  .productsHeading {
+    font-size: 30px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
+}

@@ -1,0 +1,22 @@
+.recent-item {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #cecece;
+}
+
+.itemHeading {
+  margin: 0px 0px 20px;
+  font-size: 33px;
+  text-align: center;
+}
+
+.itemHeading span {
+  font-weight: 700;
+}
+
+/* Media Screen for Small Screen (Phone) */
+@media screen and (width < 481px) {
+  .itemHeading {
+    font-size: 25px;
+  }
+}

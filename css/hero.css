@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.hero {
+  background: url('../images/heroBackground.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  color: #fff;
+}
+
+.content {
+  padding: 190px 0px;
+  text-align: center;
+  grid-column-start: 2;
+}
+
+.shopName {
+  font-size: 68px;
+  margin: 0px 0px 8px;
+}
+
+.heroText {
+  font-size: 27px;
+  margin: 19px 0px;
+}
+
+.hero-btn {
+  width: 250px;
+  padding: 13px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  outline: none;
+  box-shadow: none;
+  color: #fff;
+  background: #0066ff;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background: #013e9a;
+}
+
+/* Under Hero Section */
+.underHeroSection {
+  display: grid;
+  grid-template-columns: 120px 1fr 1fr 1fr 120px;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.users {
+  grid-column-start: 2;
+}
+
+.number {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.purpose {
+  font-size: 18px;
+}
+
+/* Media Screen for Medium Screens (Tablet) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .content .shopName {
+    font-size: 44px;
+  }
+
+  .content .heroText {
+    font-size: 17px;
+  }
+
+  .underHeroSection {
+    grid-template-columns: 40px 1fr 1fr 1fr 40px;
+  }
+
+  .users {
+    grid-column-start: 2;
+  }
+
+  .number {
+    font-size: 40px;
+  }
+
+  .purpose {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+  .content .shopName {
+    font-size: 50px;
+  }
+
+  .content .heroText {
+    font-size: 20px;
+  }
+}
+
+/* Media Screen for Small Screem (Phone) */
+@media screen and (width < 481px) {
+  .content .shopName {
+    font-size: 30px;
+  }
+
+  .content .heroText {
+    font-size: 14px;
+  }
+
+  .hero-btn {
+    width: 190px;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .underHeroSection {
+    grid-template-columns: 10px 1fr 1fr 1fr 10px;
+  }
+
+  .users {
+    grid-column-start: 2;
+  }
+
+  .number {
+    font-size: 20px;
+  }
+
+  .purpose {
+    font-size: 12px;
+  }
+}
